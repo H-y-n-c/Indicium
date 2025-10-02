@@ -56,8 +56,7 @@ Sistema full-stack para monitoramento e visualização de dados de SRAG (Síndro
 
 ### 1. Clone o repositório
 \`\`\`bash
-git clone https://github.com/seu-usuario/srag-monitoring.git
-cd srag-monitoring
+git clone https://github.com/H-y-n-c/Indicium.git
 \`\`\`
 
 ### 2. Instale as dependências

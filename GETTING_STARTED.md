@@ -256,9 +256,6 @@ echo "NEXT_PUBLIC_API_URL=http://localhost:3001" > frontend/.env.local
 | **README.md** | Complete project overview |
 | **QUICKSTART.md** | 5-minute setup guide |
 | **ARCHITECTURE.md** | Technical architecture details |
-| **DEPLOYMENT.md** | Production deployment guide |
-| **CONTRIBUTING.md** | How to contribute |
-| **PROJECT_SUMMARY.md** | Executive summary |
 
 ---
 
@@ -269,16 +266,10 @@ echo "NEXT_PUBLIC_API_URL=http://localhost:3001" > frontend/.env.local
 - 🔍 Search existing GitHub issues
 - 📚 Read the inline code comments
 
-### Community
-- 💬 GitHub Discussions
-- 📧 Email: dev@indicium.tech
-- 🐛 Report bugs in GitHub Issues
-
 ### Quick Links
 - [Full API Documentation](README.md#api-endpoints)
 - [Database Schema](backend/prisma/schema.prisma)
 - [Component Library](frontend/src/components/)
-- [Deployment Guide](DEPLOYMENT.md)
 
 ---
 
