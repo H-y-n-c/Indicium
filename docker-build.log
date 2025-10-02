@@ -1,0 +1,332 @@
+time="2025-10-02T08:09:17-03:00" level=warning msg="C:\\Projects\\Indicium\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+#1 [internal] load local bake definitions
+#1 reading from stdin 963B 0.0s done
+#1 DONE 0.0s
+
+#2 [frontend internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.09kB done
+#2 DONE 0.0s
+
+#3 [backend internal] load build definition from Dockerfile
+#3 transferring dockerfile: 834B done
+#3 DONE 0.0s
+
+#4 [backend internal] load metadata for docker.io/library/node:18-alpine
+#4 DONE 1.2s
+
+#5 [frontend internal] load .dockerignore
+#5 transferring context: 122B done
+#5 DONE 0.0s
+
+#6 [backend internal] load .dockerignore
+#6 transferring context: 125B done
+#6 DONE 0.0s
+
+#7 [frontend base 1/1] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e
+#7 resolve docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e 0.0s done
+#7 DONE 0.0s
+
+#8 [frontend builder 1/4] WORKDIR /app
+#8 CACHED
+
+#9 [frontend runner 2/8] RUN addgroup --system --gid 1001 nodejs
+#9 CACHED
+
+#10 [backend runner 2/7] RUN addgroup --system --gid 1001 nodejs
+#10 CACHED
+
+#11 [frontend runner 3/8] RUN adduser --system --uid 1001 nextjs
+#11 CACHED
+
+#12 [backend runner 3/7] RUN adduser --system --uid 1001 nestjs
+#12 CACHED
+
+#13 [frontend deps 1/4] RUN apk add --no-cache libc6-compat
+#13 CACHED
+
+#14 [frontend deps 2/4] WORKDIR /app
+#14 CACHED
+
+#15 [backend internal] load build context
+#15 transferring context: 1.75kB done
+#15 DONE 0.0s
+
+#16 [frontend internal] load build context
+#16 transferring context: 1.98kB done
+#16 DONE 0.0s
+
+#17 [backend deps 2/3] COPY package.json ./
+#17 DONE 0.0s
+
+#18 [frontend deps 3/4] COPY package.json ./
+#18 DONE 0.0s
+
+#19 [frontend deps 4/4] RUN npm install --legacy-peer-deps
+#19 ...
+
+#20 [backend deps 3/3] RUN npm install --legacy-peer-deps
+#20 ...
+
+#19 [frontend deps 4/4] RUN npm install --legacy-peer-deps
+#19 26.90 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#19 27.72 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+#19 29.94 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+#19 30.56 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+#19 31.58 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#19 32.20 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+#19 ...
+
+#20 [backend deps 3/3] RUN npm install --legacy-peer-deps
+#20 38.26 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#20 40.69 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+#20 ...
+
+#19 [frontend deps 4/4] RUN npm install --legacy-peer-deps
+#19 40.10 
+#19 40.10 added 469 packages, and audited 470 packages in 40s
+#19 40.10 
+#19 40.10 155 packages are looking for funding
+#19 40.10   run `npm fund` for details
+#19 40.11 
+#19 40.11 found 0 vulnerabilities
+#19 40.11 npm notice
+#19 40.11 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#19 40.11 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#19 40.11 npm notice To update run: npm install -g npm@11.6.1
+#19 40.11 npm notice
+#19 DONE 40.7s
+
+#20 [backend deps 3/3] RUN npm install --legacy-peer-deps
+#20 40.99 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+#20 41.40 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+#20 43.66 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#20 45.82 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+#20 ...
+
+#21 [frontend builder 2/4] COPY --from=deps /app/node_modules ./node_modules
+#21 DONE 7.3s
+
+#22 [frontend builder 3/4] COPY . .
+#22 DONE 0.3s
+
+#20 [backend deps 3/3] RUN npm install --legacy-peer-deps
+#20 ...
+
+#23 [frontend builder 4/4] RUN npm run build
+#23 0.729 
+#23 0.729 > frontend@0.1.0 build
+#23 0.729 > next build
+#23 0.729 
+#23 1.381   ▲ Next.js 14.2.33
+#23 1.382 
+#23 1.394    Creating an optimized production build ...
+#23 ...
+
+#20 [backend deps 3/3] RUN npm install --legacy-peer-deps
+#20 58.37 
+#20 58.37 added 505 packages, and audited 506 packages in 58s
+#20 58.37 
+#20 58.37 111 packages are looking for funding
+#20 58.37   run `npm fund` for details
+#20 58.38 
+#20 58.38 5 low severity vulnerabilities
+#20 58.38 
+#20 58.38 To address all issues (including breaking changes), run:
+#20 58.38   npm audit fix --force
+#20 58.38 
+#20 58.38 Run `npm audit` for details.
+#20 58.38 npm notice
+#20 58.38 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#20 58.38 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#20 58.38 npm notice To update run: npm install -g npm@11.6.1
+#20 58.38 npm notice
+#20 DONE 58.5s
+
+#23 [frontend builder 4/4] RUN npm run build
+#23 ...
+
+#24 [backend builder 2/5] COPY --from=deps /app/node_modules ./node_modules
+#24 DONE 3.3s
+
+#23 [frontend builder 4/4] RUN npm run build
+#23 ...
+
+#25 [backend builder 3/5] COPY . .
+#25 DONE 0.2s
+
+#23 [frontend builder 4/4] RUN npm run build
+#23 ...
+
+#26 [backend builder 4/5] RUN npx prisma generate
+#26 1.552 prisma:warn Prisma failed to detect the libssl/openssl version to use, and may not work as expected. Defaulting to "openssl-1.1.x".
+#26 1.552 Please manually install OpenSSL and try installing Prisma again.
+#26 3.899 Prisma schema loaded from prisma/schema.prisma
+#26 3.969 prisma:warn Prisma failed to detect the libssl/openssl version to use, and may not work as expected. Defaulting to "openssl-1.1.x".
+#26 3.969 Please manually install OpenSSL and try installing Prisma again.
+#26 4.579 
+#26 4.579 ✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 92ms
+#26 4.579 
+#26 4.579 Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+#26 4.579 
+#26 4.579 Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+#26 4.579 
+#26 4.783 npm notice
+#26 4.783 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#26 4.783 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#26 4.783 npm notice To update run: npm install -g npm@11.6.1
+#26 4.783 npm notice
+#26 DONE 4.8s
+
+#27 [backend builder 5/5] RUN npm run build
+#27 0.789 
+#27 0.789 > backend@1.0.0 build
+#27 0.789 > nest build
+#27 0.789 
+#27 4.525 webpack 5.97.1 compiled [1m[32msuccessfully[39m[22m in 2768 ms
+#27 DONE 5.3s
+
+#23 [frontend builder 4/4] RUN npm run build
+#23 21.20  ✓ Compiled successfully
+#23 21.20    Linting and checking validity of types ...
+#23 ...
+
+#28 [backend runner 4/7] COPY --from=builder /app/dist ./dist
+#28 DONE 0.1s
+
+#23 [frontend builder 4/4] RUN npm run build
+#23 24.20 
+#23 24.20 ./src/app/page.tsx
+#23 24.20 24:6  Warning: React Hook useEffect has a missing dependency: 'loadData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#23 24.20 
+#23 24.20 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+#23 25.56    Collecting page data ...
+#23 27.41    Generating static pages (0/4) ...
+#23 28.40    Generating static pages (1/4) 
+#23 28.40    Generating static pages (2/4) 
+#23 28.50    Generating static pages (3/4) 
+#23 28.58  ✓ Generating static pages (4/4)
+#23 29.43    Finalizing page optimization ...
+#23 29.43    Collecting build traces ...
+#23 ...
+
+#29 [backend runner 5/7] COPY --from=builder /app/node_modules ./node_modules
+#29 DONE 5.9s
+
+#30 [backend runner 6/7] COPY --from=builder /app/package.json ./package.json
+#30 DONE 0.3s
+
+#23 [frontend builder 4/4] RUN npm run build
+#23 ...
+
+#31 [backend runner 7/7] COPY --from=builder /app/prisma ./prisma
+#31 DONE 0.1s
+
+#32 [backend] exporting to image
+#32 exporting layers
+#32 ...
+
+#23 [frontend builder 4/4] RUN npm run build
+#23 41.86 
+#23 41.87 Route (app)                              Size     First Load JS
+#23 41.87 ┌ ○ /                                    135 kB          222 kB
+#23 41.87 └ ○ /_not-found                          873 B          88.2 kB
+#23 41.87 + First Load JS shared by all            87.4 kB
+#23 41.87   ├ chunks/117-5627cebb11a660d0.js       31.7 kB
+#23 41.87   ├ chunks/fd9d1056-b948cd7b4177ebcf.js  53.6 kB
+#23 41.87   └ other shared chunks (total)          2 kB
+#23 41.87 
+#23 41.87 
+#23 41.87 ○  (Static)  prerendered as static content
+#23 41.87 
+#23 41.90 npm notice
+#23 41.90 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#23 41.90 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#23 41.90 npm notice To update run: npm install -g npm@11.6.1
+#23 41.90 npm notice
+#23 DONE 42.5s
+
+#32 [backend] exporting to image
+#32 exporting layers 10.6s done
+#32 exporting manifest sha256:76bade7b87ed6d57ff772afa199f9c1fa955fa9c3f640af2b7969d28a520cb91 0.0s done
+#32 exporting config sha256:b69f93580e254f05b12f6f0e81843a7c68970dd339359322dfb6f82b839b005a
+#32 exporting config sha256:b69f93580e254f05b12f6f0e81843a7c68970dd339359322dfb6f82b839b005a 0.0s done
+#32 exporting attestation manifest sha256:766d9d546974d814085f692c4733561c64749191e5330a2a96a30c36fc0878b9 0.1s done
+#32 exporting manifest list sha256:b4e38dbc3e0f00010cb42a086025ad4df8e4528acde6a23adcc561612b36c17c
+#32 exporting manifest list sha256:b4e38dbc3e0f00010cb42a086025ad4df8e4528acde6a23adcc561612b36c17c 0.0s done
+#32 naming to docker.io/library/indicium-backend:latest 0.0s done
+#32 unpacking to docker.io/library/indicium-backend:latest
+#32 ...
+
+#33 [frontend runner 4/8] COPY --from=builder /app/public ./public
+#33 DONE 0.2s
+
+#34 [frontend runner 5/8] RUN mkdir .next
+#34 DONE 0.5s
+
+#32 [backend] exporting to image
+#32 ...
+
+#35 [frontend runner 6/8] RUN chown nextjs:nodejs .next
+#35 DONE 0.7s
+
+#36 [frontend runner 7/8] COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+#36 DONE 0.9s
+
+#32 [backend] exporting to image
+#32 ...
+
+#37 [frontend runner 8/8] COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+#37 DONE 0.5s
+
+#38 [frontend] exporting to image
+#38 exporting layers 0.8s done
+#38 exporting manifest sha256:93305c29735b3c55ff16771b2e3b757dd1591d08bf44a49fd6f8ed343de27856 0.0s done
+#38 exporting config sha256:8980a6e0fd038f6f3d51f3d8a31813ef4aef4384195f5d8ea42f61da7f8d42ec
+#38 exporting config sha256:8980a6e0fd038f6f3d51f3d8a31813ef4aef4384195f5d8ea42f61da7f8d42ec 0.2s done
+#38 exporting attestation manifest sha256:e878e932d4c6c49e65380838eec0617f616d272a7e89977eee4274d020c736a7 0.1s done
+#38 exporting manifest list sha256:7f56dcd155fd5d8b0ab2977fedb8d18c1b0032e9869c483b68a4b9fc51089477
+#38 ...
+
+#32 [backend] exporting to image
+#32 unpacking to docker.io/library/indicium-backend:latest 4.3s done
+#32 DONE 15.2s
+
+#38 [frontend] exporting to image
+#38 exporting manifest list sha256:7f56dcd155fd5d8b0ab2977fedb8d18c1b0032e9869c483b68a4b9fc51089477 0.1s done
+#38 naming to docker.io/library/indicium-frontend:latest 0.0s done
+#38 unpacking to docker.io/library/indicium-frontend:latest
+#38 ...
+
+#39 [backend] resolving provenance for metadata file
+#39 DONE 0.1s
+
+#38 [frontend] exporting to image
+#38 unpacking to docker.io/library/indicium-frontend:latest 0.7s done
+#38 DONE 2.0s
+
+#40 [frontend] resolving provenance for metadata file
+#40 DONE 0.0s
+ indicium-backend  Built
+ indicium-frontend  Built
+ Network indicium_srag_network  Creating
+ Network indicium_srag_network  Created
+ Volume "indicium_postgres_data"  Creating
+ Volume "indicium_postgres_data"  Created
+ Container srag_postgres  Creating
+ Container srag_postgres  Created
+ Container srag_backend  Creating
+ Container srag_backend  Created
+ Container srag_frontend  Creating
+ Container srag_frontend  Created
+ Container srag_nginx  Creating
+ Container srag_nginx  Created
+ Container srag_postgres  Starting
+ Container srag_postgres  Started
+ Container srag_postgres  Waiting
+ Container srag_postgres  Healthy
+ Container srag_backend  Starting
+ Container srag_backend  Started
+ Container srag_frontend  Starting
+ Container srag_frontend  Started
+ Container srag_nginx  Starting
+ Container srag_nginx  Started

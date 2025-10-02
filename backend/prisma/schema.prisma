@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model SragCase {
+  id              String    @id @default(uuid())
+  dataNotificacao DateTime  @map("data_notificacao")
+  dataInicioSint  DateTime? @map("data_inicio_sintomas")
+  estado          String
+  municipio       String
+  idadePaciente   Int?      @map("idade_paciente")
+  sexoPaciente    String?   @map("sexo_paciente")
+
+  // Dados clínicos
+  febre           Boolean?
+  tosse           Boolean?
+  dispneia        Boolean?
+  saturacao       Boolean?
+
+  // Hospitalização
+  hospitalizado   Boolean?
+  dataInternacao  DateTime? @map("data_internacao")
+  utiStatus       Boolean?  @map("uti_status")
+  dataEntradaUti  DateTime? @map("data_entrada_uti")
+
+  // Vacinação
+  vacinado        Boolean?
+  dosesVacina     Int?      @map("doses_vacina")
+
+  // Evolução
+  evolucaoCaso    String?   @map("evolucao_caso") // Cura, Óbito, etc
+  dataEvolucao    DateTime? @map("data_evolucao")
+
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  @@index([dataNotificacao])
+  @@index([estado])
+  @@index([municipio])
+  @@index([evolucaoCaso])
+  @@map("srag_cases")
+}
+
+model DashboardMetric {
+  id                    String   @id @default(uuid())
+  metricType            String   @map("metric_type") // case_rate, mortality_rate, icu_rate, vaccination_rate
+  value                 Float
+  period                String   // daily, weekly, monthly
+  referenceDate         DateTime @map("reference_date")
+  region                String?  // estado ou município
+
+  createdAt             DateTime @default(now()) @map("created_at")
+
+  @@unique([metricType, period, referenceDate, region])
+  @@index([metricType])
+  @@index([referenceDate])
+  @@map("dashboard_metrics")
+}
+
+model Region {
+  id        String   @id @default(uuid())
+  estado    String   @unique
+  municipios String[] @default([])
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("regions")
+}

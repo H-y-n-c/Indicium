@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database only for local development
+  postgres:
+    image: postgres:15-alpine
+    container_name: srag_postgres_dev
+    restart: always
+    environment:
+      POSTGRES_USER: srag_user
+      POSTGRES_PASSWORD: srag_password123
+      POSTGRES_DB: srag_monitoring
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U srag_user']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_dev_data:

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test SRAG API Connection</title>
+</head>
+<body>
+    <h1>Testing API Connection from Browser</h1>
+    <button onclick="testAPI()">Test API</button>
+    <pre id="result"></pre>
+
+    <script>
+        async function testAPI() {
+            const result = document.getElementById('result');
+            try {
+                result.textContent = 'Testing connection to http://localhost:3001/api/health...\n';
+
+                const response = await fetch('http://localhost:3001/api/health');
+                const data = await response.json();
+
+                result.textContent += 'SUCCESS!\n' + JSON.stringify(data, null, 2);
+
+                // Test metrics
+                const metricsResponse = await fetch('http://localhost:3001/api/metrics');
+                const metricsData = await metricsResponse.json();
+
+                result.textContent += '\n\nMetrics:\n' + JSON.stringify(metricsData, null, 2);
+            } catch (error) {
+                result.textContent += 'ERROR: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+> backend@1.0.0 start:dev
+> nest start --watch
+
+
+ Info  Webpack is building your sources...
+
+webpack 5.97.1 compiled [1m[32msuccessfully[39m[22m in 3958 ms
+Type-checking in progress...
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +41ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSragModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSragController {/api}:[39m[38;5;3m +8ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/metrics, GET} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/cases, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/regions, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27184  - [39m02/10/2025, 8:21:13 a. m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +34ms[39m
+🚀 Backend running on http://localhost:3001
+No errors found.
+
+ Info  Webpack is building your sources...
+
+webpack 5.97.1 compiled [1m[32msuccessfully[39m[22m in 537 ms
+Type-checking in progress...
+No errors found.
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +22ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSragModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSragController {/api}:[39m[38;5;3m +8ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/metrics, GET} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/cases, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/regions, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 11436  - [39m02/10/2025, 8:38:13 a. m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +27ms[39m
+🚀 Backend running on http://localhost:3001
+
+ Info  Webpack is building your sources...
+
+webpack 5.97.1 compiled [1m[32msuccessfully[39m[22m in 346 ms
+No errors found.
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSragModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSragController {/api}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/metrics, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/cases, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/regions, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27896  - [39m02/10/2025, 8:41:17 a. m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +29ms[39m
+🚀 Backend running on http://localhost:3001

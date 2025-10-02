@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(docker ps:*)",
+      "Bash(pkill:*)",
+      "Bash(curl:*)",
+      "Bash(awk:*)",
+      "Bash(taskkill:*)",
+      "Bash(docker stop:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
